@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Downloads</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlexDiRobot</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h2 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  section {
+    margin: 20px 0;
+  }
+</style>
 </head>
 <body>
-    <h1>Download CSV Files</h1>
-    <div id="file-list">Loading...</div>
-
-    <script src="script.js"></script>
+  <header>
+    <h1>AlexDiBot - Groccery Prices Robot</h1>
+  </header>
+  <div class="container">
+    <section id="what-is-this">
+      <h2>What is this?</h2>
+      <p>- This is a robot that gets daily data from leading groccery shops for a University project.</p>
+      <p>- Why?... Some people (like me) prefer to make a budget using a spreadsheet and the website can be hard to navigate quickly and copy price info each week. This makes budgeting a breeze. Also this data is useful for tracking prices overtime.</p>
+      <p>- Data is free and avaliable in CSV (can open this in excel or google sheets) file download.</p>
+      <p>- API endpoints are coming soon.</p>
+    </section>
+    <section id="coles">
+      <h2 style="color: red;">Coles</h2>
+      <p>Scope: Data collected from 1 store in Capital city of each state/territory.</p>
+      <p>Limitiations: Not enough server resources to track regional pricing outside of cities if that exists</p>
+      <p>Planned Upgrades: Track all Coles stores prices. Needs more funding to pay for servers</p>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download QLD_COLES_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download NSW_COLES_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download ACT_COLES_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download VIC_COLES_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download NT_COLES_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download WA_COLES_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download SA_COLES_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" style="color: lightblue;" download>Download TAS_COLES_DATA.csv<br></a>
+    </section>
+    <section id="woolworths">
+      <h2 style="color: greenyellow;">Woolworths</h2>
+      <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet.</p>
+    </section>
+    <section id="aldi">
+      <h2>Kmart</h2>
+      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh.</p>
+    </section>
+    <section id="kmart">
+      <h2>Aldi</h2>
+      <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie.</p>
+    </section>
+    <section id="Donate">
+      <h1 style="color: orchid">Donate - Fund More Servers & Free Data</h1>
+      <p>- Data is free but unfortunately the servers that run this bot are expensive.</p>
+      <p>- Currently I cannot affort to get data for each individual store & only get data from one store per state/territory. It would be too expensive to do all stores without external funding.
+      </p><p>- If you want to see more data & an expanded project consider donating to my ByMeACoffeeLink below.</p>
+        <p><b>- This project is not at all profitable and will only go towards upgrading servers to collect more data.</b>
+      </p>
+      <a href="https://www.buymeacoffee.com/app/dashboard" style="color: orange;" >Donate / ByMeACoffee</a>
+    </section>
+  </div>
 </body>
 </html>
