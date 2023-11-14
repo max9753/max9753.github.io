@@ -48,6 +48,7 @@
       Some people (like me) prefer to make a budget using a spreadsheet and the website can be hard to navigate quickly and copy price info each week. This makes budgeting a breeze. Also this data is useful for tracking prices overtime.</p>
       <p>- Data is free and avaliable in CSV (can open this in excel or google sheets) file download.</p>
       <p>- API endpoints are coming soon.</p>
+      <p>- Bot will run long term and track groccery prices overtime</p>
       <p><b>How?</b><br>
             I've built a web scraper in python which dodges the current blocks on web scraping on Coles & Woolworths.<br>
             Alot of the old bots have been killed by Coles & Woolies who do not want people to get their data without visiting their website.<br>
@@ -64,8 +65,14 @@
     </section>
     <section id="coles">
       <h2 style="color: red;">Coles</h2>
+      <p><b style="font-size: larger;">Changelog - Updated 15/11/23</b><br>
+        - Scraped QLD, VIC, NSW!<br>
+        - Added 1 data file per state<br>
+        - Increased data collection and added new fields like "Product ID", "Unit Price", "Category", "Saving Amount", etc.<br>
+        - Can now scrape any Coles store. But this requires a new instance of the bot each time a the moment. Email me if you want your store scraped and I will do it for you (for free) and publish it here.<br>
+        - Currently still not scraping all stores as this would require lots of server time which I cannot afford.</p>
       <p><b>Scope:</b><br>
-            - Data collected from 1 store in the metro Brisbane Area<br>
+            - <b>UPDATED: Data collected from 3 stores in Australia</b><br>
             - From experimentaion, the only thing that often differs by state is fruit, vegetables & meat prices. Most normal groceries are nation wide priced. (Havn't checked extremely remote stores)</p>
       <p><b>Limitations:</b><br>
             - I can't currently afford (Uni Student) to pay for more server resources to scrape data from every store.<br>
@@ -74,19 +81,20 @@
             - Next week (hopefully) I will have seperate data for each state by getting data from 1 store in each capital.<br>
             - Track all Coles stores prices. (Needs more funding as this will require lots of server time). There are 846 Coles stores in Aus<br>
             - Track Coles Local stores (The more expensive but smaller stores). Again requires more funding to pay for servers</p>
-      <a href="https://drive.google.com/uc?export=download&id=1Ls5FdaQxP9IoohxeVq6F129mNHOXodB_" download>Download COLES_TEST_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1aCF_FGzp_xCjAfSDKk8OR0Tw9IJGDX3S" download>Download QLD_COLES_TEST_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1MCMzDMoTDHGbr2h0v9f499TxCVqbG2FO" download>Download NSW_COLES_TEST_DATA.csv<br></a>
+      <a href="https://drive.google.com/uc?export=download&id=1XO8cCH9FtonCB-_veINZsXUhEJ8T4qZp" download>Download VIC_COLES_TEST_DATA.csv<br></a>
       <p style="color: grey;">Download QLD_COLES_DATA.csv - Coming Soon!<br>
-        Download NSW_COLES_DATA.csv - Coming Soon!<br>
         Download ACT_COLES_DATA.csv - Coming Soon!<br>
         Download NT_COLES_DATA.csv - Coming Soon!<br>
         Download WA_COLES_DATA.csv - Coming Soon!<br>
         Download SA_COLES_DATA.csv - Coming Soon!<br>
         Download TAS_COLES_DATA.csv - Coming Soon!<br>
-        Download VIC_COLES_DATA.csv - Coming Soon!<br></p>
 
     </section>
     <section id="woolworths">
       <h2 style="color: rgb(78, 129, 2);">Woolworths</h2>
+      <p><b>OFFLINE: Will scrape more data in the morning but currently fixing a bug with the woolies bot - 15/11/23</b><br>
       <p><b>Scope:</b><br>
         - Data collected from 1 store in the metro Brisbane Area<br>
         - From experimentaion, the only thing that often differs by state is fruit, vegetables & meat prices. Most normal groceries are nation wide priced. (Havn't checked extremely remote stores)</p>
