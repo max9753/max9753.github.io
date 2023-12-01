@@ -43,12 +43,14 @@
   <div class="container">
     <section id="what-is-this">
       <h2>What is this?</h2>
-      <p>This is a robot that gets daily data from leading grocery shops for a University project.</p>
+      <p>This is a robot that gets daily data from leading grocery shops for a University project. This website is not very pretty but is functional for now.</p>
       <p><b>Why?</b><br>
       Some people (like me) prefer to make a budget using a spreadsheet and the website can be hard to navigate quickly and copy price info each week. This makes budgeting a breeze. Also this data is useful for tracking prices overtime.</p>
       <p>- Data is free and avaliable in CSV (can open this in excel or google sheets) file download.</p>
       <p>- API endpoints are coming soon.</p>
-      <p>- Bot will run long term and track groccery prices overtime</p>
+      <p>- Bot will run long term and track groccery prices overtime
+      <p>- Woolworths has ended support (by force) for normal data collection leaving alot of price comparison apps dead. This is an attempt to circumvent this.</p>
+      </p>
       <p><b>How?</b><br>
             I've built a web scraper in python which dodges the current blocks on web scraping on Coles & Woolworths.<br>
             Alot of the old bots have been killed by Coles & Woolies who do not want people to get their data without visiting their website.<br>
@@ -65,14 +67,13 @@
     </section>
     <section id="coles">
       <h2 style="color: red;">Coles</h2>
-      <p><b style="font-size: larger;">Changelog - Updated 15/11/23</b><br>
-        - Scraped QLD, VIC, NSW!<br>
+      <p><b style="font-size: larger;">Changelog - Updated 01/12/23</b><br>
         - Added 1 data file per state<br>
         - Increased data collection and added new fields like "Product ID", "Unit Price", "Category", "Saving Amount", etc.<br>
         - Can now scrape any Coles store. But this requires a new instance of the bot each time a the moment. Email me if you want your store scraped and I will do it for you (for free) and publish it here.<br>
         - Currently still not scraping all stores as this would require lots of server time which I cannot afford.</p>
       <p><b>Scope:</b><br>
-            - <b>UPDATED: Data collected from 3 stores in Australia</b><br>
+            - Data collected from 7 stores in Australia<br>
             - From experimentaion, the only thing that often differs by state is fruit, vegetables & meat prices. Most normal groceries are nation wide priced. (Havn't checked extremely remote stores)</p>
       <p><b>Limitations:</b><br>
             - I can't currently afford (Uni Student) to pay for more server resources to scrape data from every store.<br>
@@ -81,20 +82,14 @@
             - Next week (hopefully) I will have seperate data for each state by getting data from 1 store in each capital.<br>
             - Track all Coles stores prices. (Needs more funding as this will require lots of server time). There are 846 Coles stores in Aus<br>
             - Track Coles Local stores (The more expensive but smaller stores). Again requires more funding to pay for servers</p>
-      <a href="https://drive.google.com/uc?export=download&id=1aCF_FGzp_xCjAfSDKk8OR0Tw9IJGDX3S" download>Download QLD_COLES_TEST_DATA.csv<br></a>
-      <a href="https://drive.google.com/uc?export=download&id=1MCMzDMoTDHGbr2h0v9f499TxCVqbG2FO" download>Download NSW_COLES_TEST_DATA.csv<br></a>
-      <a href="https://drive.google.com/uc?export=download&id=1XO8cCH9FtonCB-_veINZsXUhEJ8T4qZp" download>Download VIC_COLES_TEST_DATA.csv<br></a>
-      <p style="color: grey;">Download QLD_COLES_DATA.csv - Coming Soon!<br>
-        Download ACT_COLES_DATA.csv - Coming Soon!<br>
-        Download NT_COLES_DATA.csv - Coming Soon!<br>
-        Download WA_COLES_DATA.csv - Coming Soon!<br>
-        Download SA_COLES_DATA.csv - Coming Soon!<br>
-        Download TAS_COLES_DATA.csv - Coming Soon!<br>
+            <p><b>View Data</b><br>
+            <a href="https://drive.google.com/drive/folders/1Q7aic5QrqrUF3civiWutdQNNqkhkN__U?usp=drive_link" >Coles Google Drive Folder - View & Download CSV Files</a>
+      <p style="color: grey;">It was mentioned that people on phones could not download the csv files and view them.
+        <br>I have removed the individual links in favor of the google drive folder link so that mobile users can see the product prices.<p>
 
     </section>
     <section id="woolworths">
       <h2 style="color: rgb(78, 129, 2);">Woolworths</h2>
-      <p><b>OFFLINE: Will scrape more data in the morning but currently fixing a bug with the woolies bot - 15/11/23</b><br>
       <p><b>Scope:</b><br>
         - Data collected from 1 store in the metro Brisbane Area<br>
         - From experimentaion, the only thing that often differs by state is fruit, vegetables & meat prices. Most normal groceries are nation wide priced. (Havn't checked extremely remote stores)</p>
@@ -105,16 +100,10 @@
         - Next week (hopefully) I will have seperate data for each state by getting data from 1 store in each capital.<br>
         - Track all Woolies stores prices. (Needs more funding as this will require lots of server time). There are ~1000 Woolies stores in Aus<br>
         - Track Woolies Metro stores (The more expensive but smaller stores). Again requires more funding to pay for servers</p>
-      <a href="https://drive.google.com/uc?export=download&id=1HQOy6v4EBafPocTYhdVvHTNwdUKBktRV" download>Download WOOLIES_TEST_DATA.csv<br></a>
-      <p style="color: grey;">Download QLD_WOOLIES_DATA.csv - Coming Soon!<br>
-        Download NSW_WOOLIES_DATA.csv - Coming Soon!<br>
-        Download ACT_WOOLIES_DATA.csv - Coming Soon!<br>
-        Download NT_WOOLIES_DATA.csv - Coming Soon!<br>
-        Download WA_WOOLIES_DATA.csv - Coming Soon!<br>
-        Download SA_WOOLIES_DATA.csv - Coming Soon!<br>
-        Download TAS_WOOLIES_DATA.csv - Coming Soon!<br>
-        Download VIC_WOOLIES_DATA.csv - Coming Soon!<br></p>
-      <p><b>REPORTED BUG: Last night the bot had a network error which means not all of the woolworths data in 'cleaning section' was collected.</b></p>
+        <p><b>View Data</b><br>
+        <a href="https://drive.google.com/drive/folders/1ugYEgF-9q4WX0-mpWbqppfmZ9yGfpFFI?usp=drive_link" >Woolies Google Drive Folder - View & Download CSV Files</a>
+        <p style="color: grey;">It was mentioned that people on phones could not download the csv files and view them.
+          <br>I have removed the individual links in favor of the google drive folder link so that mobile users can see the product prices.<p>
     </section>
     <section id="kmart">
       <h2>Kmart</h2>
